@@ -20,6 +20,9 @@ components:
     cpuRequest: 1000m
     mountSources: true
     sourceMapping: /projects
+    env:
+      - name: KUBEDOCK_ENABLED
+        value: true
 - name: ollama
   attributes:
     container-overrides:
