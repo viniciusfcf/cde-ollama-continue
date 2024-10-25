@@ -22,7 +22,7 @@ components:
     sourceMapping: /projects
     env:
       - name: KUBEDOCK_ENABLED
-        value: true
+        value: 'true'
 - name: ollama
   attributes:
     container-overrides:
