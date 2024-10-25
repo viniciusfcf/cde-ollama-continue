@@ -37,6 +37,11 @@ components:
         value: 'true'
       - name: TESTCONTAINERS_CHECKS_DISABLE
         value: 'true'
+    endpoints:
+      - exposure: none
+        name: kubedock
+        protocol: tcp
+        targetPort: 2475
 - name: ollama
   attributes:
     container-overrides:
